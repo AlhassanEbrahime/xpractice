@@ -54,7 +54,7 @@
 |------------------|---------------------------------------------------------------------------------------------|
 | **Employee**     | Main user of the system. Manages their own vacation time (view, create, cancel requests).   |
 | **Manager**      | Has all employee capabilities plus approves subordinates’ requests and can award comp time. |
-| **Clerk (HR)**   | HR staff member. Maintains employee records, manages leave categories/locations, overrides rules. |
+| **Clerk**   | HR staff member. Maintains employee records, manages leave categories/locations, overrides rules. |
 | **System Admin** | Ensures smooth operation of technical resources (web server, database), manages system logs. |
 
 
