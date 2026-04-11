@@ -60,7 +60,7 @@
 
 
 ## sequence diagram:
-[alt text](../../practice/diagrams/week1/ManageTime_DS.drawio.pdf)
+![text](../../practice/diagrams/week1/ManageTime_DS.drawio.pdf)
 ---
 
 ## Entities:
