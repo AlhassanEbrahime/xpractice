@@ -60,7 +60,8 @@
 
 
 ## sequence diagram:
-[Download our User Manual](ManageTime_DS.drawio.pdf)
+**click to see diagram**
+[Manage Time Sequence diagram](ManageTime_DS.drawio.pdf)
 ---
 
 ## Entities:
