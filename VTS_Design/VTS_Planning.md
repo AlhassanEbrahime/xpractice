@@ -116,3 +116,8 @@ BEGIN VTS
 
 END VTS
 ```
+
+
+## HR status : 
+- Adding to employee colom hr_id and status of HR approval. so that we can keep track 
+of the hr who approaved the request and the status
