@@ -596,6 +596,12 @@ ORDER   BY total_spent DESC;
 
 ---
 
+
+
+## Denormalization : 
+- **create a table with specfied columns**
+- **create a trigger to insert the deta in normalized table in the same time they insted in its orgiginal tables**
+
 ## 🧠 Design Decisions
 
 **Soft-delete on `ORDERS` and `CATEGORY`**  
