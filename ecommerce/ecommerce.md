@@ -599,7 +599,7 @@ ORDER   BY total_spent DESC;
 
 
 
-## Denormalization : 
+## Denormalization
 - **create a table with specfied columns**
 - **create a trigger to insert the deta in normalized table in the same time they insted in its orgiginal tables**
 
