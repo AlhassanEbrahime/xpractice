@@ -20,7 +20,7 @@
   - [Monthly Top-Selling Products](#2-monthly-top-selling-products)
   - [High-Value Customers (Last 30 Days)](#3-high-value-customers-last-30-days)
 - [PostgreSQL vs MySQL — Key Differences](#-postgresql-vs-mysql--key-differences)
-- [Denormalizaiton](#-Denormalization)
+- [Denormalization](#denormalization)
 - [Design Decisions](#-design-decisions)
 
 ---
@@ -599,7 +599,8 @@ ORDER   BY total_spent DESC;
 
 
 
-## Denormalization
+### Denormalization
+
 - **create a table with specfied columns**
 - **create a trigger to insert the deta in normalized table in the same time they insted in its orgiginal tables**
 
