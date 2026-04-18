@@ -20,6 +20,7 @@
   - [Monthly Top-Selling Products](#2-monthly-top-selling-products)
   - [High-Value Customers (Last 30 Days)](#3-high-value-customers-last-30-days)
 - [PostgreSQL vs MySQL — Key Differences](#-postgresql-vs-mysql--key-differences)
+- [Denormalizaiton](#-Denormalization)
 - [Design Decisions](#-design-decisions)
 
 ---
