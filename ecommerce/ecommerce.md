@@ -41,6 +41,9 @@
 ---
 
 ## 🗺 Entity-Relationship Diagram
+![alt text](<Screenshot 2026-04-18 152240-1.png>)
+
+
 
 ```
 ┌───────────────────────┐
