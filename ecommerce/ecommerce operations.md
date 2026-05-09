@@ -62,6 +62,9 @@ This query matches values like:
 - `CAMERA`
 - `CaMeRa`
 
+## Result
+<img width="1572" height="608" alt="image" src="https://github.com/user-attachments/assets/68284ca9-0bb3-486a-9af4-5946b9ae475d" />
+
 ---
 
 # Task 2: Suggest Popular Products from the Same Category
@@ -107,39 +110,11 @@ ORDER BY TOTAL_SOLD DESC
 LIMIT 10;
 ```
 
-## Example
+## Result
+**With purchased product ID = 105**
+<img width="1570" height="395" alt="image" src="https://github.com/user-attachments/assets/9caf8837-b756-431c-80b1-985ecd762afb" />
 
-If the purchased product ID is `105`, replace `:purchased_product_id` with `105`:
 
-```sql
-SELECT
-    p.PRODUCT_ID,
-    p.NAME,
-    p.DESCRIPTION,
-    p.PRICE,
-    p.CATEGORY_ID,
-    COALESCE(SUM(od.QUANTITY), 0) AS TOTAL_SOLD
-FROM PRODUCT p
-LEFT JOIN ORDER_DETAILS od
-    ON p.PRODUCT_ID = od.PRODUCT_ID
-WHERE p.CATEGORY_ID = (
-    SELECT CATEGORY_ID
-    FROM PRODUCT
-    WHERE PRODUCT_ID = 105
-)
-AND p.PRODUCT_ID <> 105
-AND p.STOCK_QTY > 0
-GROUP BY
-    p.PRODUCT_ID,
-    p.NAME,
-    p.DESCRIPTION,
-    p.PRICE,
-    p.CATEGORY_ID
-ORDER BY TOTAL_SOLD DESC
-LIMIT 10;
-```
-
-## Explanation
 
 The query works as follows:
 
