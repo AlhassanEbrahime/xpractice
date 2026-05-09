@@ -373,36 +373,6 @@ Product and quantity are stored in `ORDER_DETAILS`.
 
 Therefore, this trigger should be placed on `ORDER_DETAILS`, not `ORDERS`.
 
-## Better Production Design
-
-In a production system, avoid this pattern:
-
-```sql
-SELECT MAX(ORDER_ID) FROM ORDERS
-```
-
-It can be unsafe when multiple users insert orders at the same time.
-
-A better approach is to use `RETURNING`:
-
-```sql
-INSERT INTO ORDERS
-(
-    CUSTOMER_ID,
-    ORDER_DATE,
-    TOTAL_AMOUNT
-)
-VALUES
-(
-    100,
-    CURRENT_DATE,
-    2500.00
-)
-RETURNING ORDER_ID;
-```
-
-Then use the returned `ORDER_ID` when inserting into `ORDER_DETAILS`.
-
 ---
 
 # Full Execution Order
