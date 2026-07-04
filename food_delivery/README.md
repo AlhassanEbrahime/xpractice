@@ -88,10 +88,6 @@ Payment methods, wallet, and support.
 - **Client / Stakeholder:** Use the module tables above to review what the app should be able to do, confirm scope, and request changes before development begins.
 - **Developer:** Use the "Developer notes" under each module as a starting point for technical planning (APIs, SDKs, and third-party services required). Each **Function** row can be treated as an individual user story or ticket.
 
-## 📄 Source
-
-This README is generated from `Talabat_Application_Analysis.xlsx`, which contains the original raw breakdown (Layouts / Features / Functions) used as the basis for this document.
-
 ## 🔖 Status
 
 This is a **living analysis document** — as more screens/modules of the app are reviewed (e.g., Checkout, Profile, Notifications), they should be added here following the same Layout → Feature → Function structure.
